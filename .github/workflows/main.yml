@@ -16,19 +16,15 @@ jobs:
           flutter-version: '3.24.0'
           channel: 'stable'
 
-      
-      - name: List files to verify directory
-        run: |
-          pwd
-          ls -la
-
       - name: Install dependencies
         run: flutter pub get
+        working-directory: "DKK market hub"
 
       - name: Build APK
         run: flutter build apk --release
+        working-directory: "DKK market hub"
 
       - uses: actions/upload-artifact@v4
         with:
           name: dkk-market-hub-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: "DKK market hub/build/app/outputs/flutter-apk/app-release.apk"
