@@ -1,0 +1,6 @@
+{
+  "name": "DKK Marketing",
+  "description": "Single-App multi-role marketplace with tiered commission, seller leveling, Easypaisa payments, Pro VIP listings, live Owner Admin control, and Firebase Cloud sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
